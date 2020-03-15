@@ -12,3 +12,4 @@ module.exports = {
   couchdb: 'http://163.172.176.57:5984/',
   // couchdb: 'http://localhost:5984',
 }
+// http://163.172.176.57:5984/_utils/index.html
