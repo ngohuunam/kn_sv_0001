@@ -3,12 +3,12 @@ const router = express.Router()
 const setting = require('../setting')
 const nano = require('nano')(setting.couchdb)
 const db = {
-  jobs: nano.db.use('jobs'),
+  orderList: nano.db.use('order_list_2020'),
 }
 
 /* GET Planning Department page. */
 router.get('/', function(req, res, next) {
-  db.jobs.list({ include_docs: true }).then(body => {
+  db.orderList.list({ include_docs: true }).then(body => {
     body.rows.forEach(doc => {
       console.log(doc.doc)
     })

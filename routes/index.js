@@ -7,7 +7,7 @@ const db = {
 }
 
 /* GET Planning Department page. */
-router.get('/', function(req, res, next) {
+router.get('/all', function(req, res, next) {
   db.jobs.list({ include_docs: true }).then(body => {
     body.rows.forEach(doc => {
       console.log(doc.doc)

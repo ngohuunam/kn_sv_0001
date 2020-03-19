@@ -1,6 +1,7 @@
 module.exports = {
   origin: [
     'http://localhost:3000',
+    'http://localhost:5000',
     'http://localhost:8080',
     'http://192.168.1.200:8080',
     'http://192.168.2.190:8080',
